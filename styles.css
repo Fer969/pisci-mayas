@@ -49,6 +49,19 @@ html {
 .navbar-brand {
     font-size: 1.5rem;
     color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.navbar-logo:hover {
+    transform: scale(1.05);
 }
 
 .navbar-nav .nav-link {
