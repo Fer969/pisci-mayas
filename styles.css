@@ -444,12 +444,31 @@ html {
 
 .product-image {
     height: 150px;
-    background: var(--gradient-secondary);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
     color: var(--white-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    opacity: 0.3;
+}
+
+.product-image i {
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .product-card .card-body {
@@ -460,6 +479,41 @@ html {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+/* Variaciones de colores para las tarjetas */
+.product-card:nth-child(1) .product-image {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.product-card:nth-child(2) .product-image {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+.product-card:nth-child(3) .product-image {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+}
+
+.product-card:nth-child(4) .product-image {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+}
+
+.product-card:nth-child(5) .product-image {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+}
+
+.product-card:nth-child(6) .product-image {
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Efecto de hover mejorado */
+.product-card:hover .product-image {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+.product-card:hover .product-image::before {
+    opacity: 0.5;
 }
 
 /* Galería */
