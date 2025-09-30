@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisci-Mayas - Especialistas en Tilapia Roja</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-fish text-primary me-2"></i>
+                Pisci-Mayas
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produccion">Producción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <!-- Elementos decorativos de fondo -->
+        <div class="hero-decorations">
+            <div class="floating-fish fish-1">🐟</div>
+            <div class="floating-fish fish-2">🐠</div>
+            <div class="floating-fish fish-3">🐟</div>
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <div class="hero-badge mb-3">
+                                <span class="badge-text">🐟 Especialistas en Tilapia Roja</span>
+                            </div>
+                            <h1 class="hero-title">
+                                <span class="title-main">Piscícola</span>
+                                <span class="title-brand">Pisci-Mayas</span>
+                            </h1>
+                            <p class="hero-subtitle">
+                                Especialistas en producción sustentable de <strong>Tilapia Roja</strong> de alta calidad, comprometidos con el medio ambiente y la excelencia.
+                            </p>
+                            <div class="hero-stats mb-4">
+                                <div class="stat-item">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Años de experiencia</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Sustentable</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">24/7</span>
+                                    <span class="stat-label">Calidad garantizada</span>
+                                </div>
+                            </div>
+                            <div class="hero-buttons">
+                                <a href="#nosotros" class="btn btn-primary btn-lg me-3">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    Conócenos
+                                </a>
+                                <a href="#contacto" class="btn btn-outline-light btn-lg">
+                                    <i class="fas fa-phone me-2"></i>
+                                    Contactar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- Imagen principal de la piscícola -->
+                        <div class="hero-image-container">
+                            <img src="images/piscicola-hero.jpg" 
+                                 alt="Pisci-Mayas - Piscícola con lagunas de producción" 
+                                 class="hero-image"
+                                 loading="eager">
+                            <!-- Fallback para cuando la imagen no carga -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Sobre Pisci-Mayas</h2>
+                    <p class="lead text-muted">
+                        Especialistas en Tilapia Roja con más de 10 años de experiencia en producción sustentable
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="about-card h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <h4>Nuestra Historia</h4>
+                        <p>Con más de 10 años de experiencia especializada en Tilapia Roja, Pisci-Mayas se ha consolidado como líder en producción sustentable de esta especie de alta calidad en la región.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="about-card h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h4>Misión</h4>
+                        <p>Producir Tilapia Roja de excelente calidad mediante técnicas sustentables especializadas que respeten el medio ambiente y contribuyan al bienestar de la comunidad.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="about-card h-100">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Visión</h4>
+                        <p>Ser reconocidos como la piscícola líder en producción de Tilapia Roja, aportando al desarrollo de la acuicultura responsable y sustentable en la región.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Producción/Servicios -->
+    <section id="produccion" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Nuestros Productos</h2>
+                    <p class="lead text-muted">
+                        Tilapia Roja cultivada con los más altos estándares de calidad y técnicas sustentables
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-fish"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tilapia Roja Fresca</h5>
+                            <p class="card-text">Tilapia Roja de excelente calidad, rica en proteínas y omega-3, con sabor delicado y textura firme.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tilapia Roja por Peso</h5>
+                            <p class="card-text">Disponible en diferentes tamaños: 200g, 300g, 400g y 500g, según sus necesidades comerciales.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alevines de Tilapia Roja</h5>
+                            <p class="card-text">Crías de Tilapia Roja de alta calidad genética para el desarrollo de nuevas piscícolas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Alimento Balanceado</h5>
+                            <p class="card-text">Nutrición especializada para Tilapia Roja, formulada para el óptimo crecimiento y desarrollo.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Asesoría Técnica</h5>
+                            <p class="card-text">Consultoría especializada en cultivo de Tilapia Roja, manejo y diseño de sistemas acuícolas.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card h-100">
+                        <div class="product-image">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Entrega a Domicilio</h5>
+                            <p class="card-text">Servicio de entrega fresca en toda la región, garantizando la calidad del producto hasta su destino.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Galería</h2>
+                    <p class="lead text-muted">
+                        Conoce nuestras instalaciones y procesos de producción
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/lagunas-produccion.jpg" 
+                             alt="Lagunas de producción de Tilapia Roja" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Lagunas de producción</h5>
+                            <p>Instalaciones especializadas para Tilapia Roja</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/proceso-alimentacion.jpg" 
+                             alt="Proceso de alimentación de Tilapia Roja" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Proceso de alimentación</h5>
+                            <p>Sistema de alimentación balanceada</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/cosecha-tilapia.jpg" 
+                             alt="Cosecha de Tilapia Roja" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Cosecha de Tilapia Roja</h5>
+                            <p>Proceso de cosecha especializado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/instalaciones.jpg" 
+                             alt="Instalaciones de la piscícola" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Instalaciones</h5>
+                            <p>Infraestructura</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/sistema-filtracion.jpg" 
+                             alt="Sistema de filtración de agua" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Sistema de filtración</h5>
+                            <p>Filtración y tratamiento de agua</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item">
+                        <img src="images/galeria/equipo-tecnico.jpg" 
+                             alt="Equipo técnico especializado" 
+                             class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h5>Equipo técnico</h5>
+                            <p>Personal especializado en Tilapia Roja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="lead text-muted">
+                        Estamos aquí para atenderte y responder todas tus consultas
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Envíanos un mensaje</h4>
+                        <form action="https://formspree.io/f/xpwydkja" method="POST">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Información de contacto</h4>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <div>
+                                <strong>Dirección:</strong><br>
+                                Vereda Los Rosales<br>
+                                Hobo, Huila<br>
+                                Colombia
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <div>
+                                <strong>Teléfono:</strong><br>
+                                6088642828
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                jompa.joni@hotmail.com
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-clock text-primary me-3"></i>
+                            <div>
+                                <strong>Horarios de atención:</strong><br>
+                                Lunes a Sabado: 7:00 AM - 4:00 PM<br>
+                            </div>
+                        </div>
+                        
+                        <!-- Mapa embebido -->
+                        <div class="map-container mt-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7450.7842047775885!2d-75.43580221754597!3d2.6140796375659887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sco!4v1759235005685!5m2!1ses-419!2sco" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-fish text-primary me-2"></i>
+                        Pisci-Mayas
+                    </h5>
+                    <p class="text-light">
+                        Piscícola especializada en producción sustentable de Tilapia Roja de alta calidad y el cuidado del medio ambiente.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-light me-3">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#inicio" class="text-light text-decoration-none">Inicio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#nosotros" class="text-light text-decoration-none">Nosotros</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#produccion" class="text-light text-decoration-none">Producción</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#galeria" class="text-light text-decoration-none">Galería</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contacto" class="text-light text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <div class="footer-contact">
+                        <p class="mb-2">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            Vereda Los Rosales, Hobo, Huila
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            6088642828
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            jompa.joni@hotmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Pisci-Mayas. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Desarrollado con <i class="fas fa-heart text-danger"></i> para la acuicultura sustentable</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
