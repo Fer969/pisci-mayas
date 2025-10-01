@@ -311,8 +311,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroTitle && window.innerWidth > 768) {
         const originalText = heroTitle.textContent;
         setTimeout(() => {
-            typeWriter(heroTitle, originalText, 80);
-        }, 500);
+            typeWriter(heroTitle, originalText, 30); // Reducido de 80 a 30ms
+        }, 200); // Reducido de 500 a 200ms
     }
     
     console.log('Pisci-Mayas website initialized successfully!');
