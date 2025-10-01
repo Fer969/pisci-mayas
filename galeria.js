@@ -236,13 +236,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Smooth scroll para enlaces del navbar
+    // Navegación del navbar
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
-            if (href.startsWith('#')) {
+            
+            // Si es un enlace a la página principal con sección específica
+            if (href.startsWith('index.html#')) {
+                e.preventDefault();
+                
+                // Redirigir a la página principal con la sección específica
+                window.location.href = href;
+            }
+            // Si es un enlace a sección de la misma página (por si acaso)
+            else if (href.startsWith('#')) {
                 e.preventDefault();
                 
                 const targetId = href;
@@ -257,6 +266,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }
             }
+            // Para otros enlaces (como galeria.html), dejar que funcionen normalmente
         });
     });
 
