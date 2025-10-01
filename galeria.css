@@ -40,48 +40,6 @@
     margin: 0 auto;
 }
 
-/* Filtros de categorías */
-.gallery-filters {
-    border-bottom: 1px solid var(--neutral-color);
-}
-
-.filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.filter-btn {
-    background: white;
-    border: 2px solid var(--neutral-color);
-    color: var(--text-dark);
-    padding: 0.75rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 500;
-    transition: var(--transition);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.filter-btn:hover {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-light);
-}
-
-.filter-btn.active {
-    background: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-light);
-}
 
 /* Galería principal */
 .gallery-main {
@@ -144,18 +102,6 @@
     opacity: 0.9;
 }
 
-.gallery-overlay .category-badge {
-    display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    padding: 0.25rem 0.75rem;
-    border-radius: 15px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
 
 /* Placeholder para imágenes que no cargan */
 .gallery-placeholder {
@@ -284,16 +230,6 @@
         font-size: 1rem;
     }
     
-    .filter-buttons {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .filter-btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
     
     .gallery-item {
         height: 250px;
@@ -361,14 +297,8 @@
     outline-offset: 2px;
 }
 
-.filter-btn:focus {
-    outline: 2px solid var(--secondary-color);
-    outline-offset: 2px;
-}
-
 /* Efectos de transición suaves */
 .gallery-item,
-.filter-btn,
 #load-more-btn {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
