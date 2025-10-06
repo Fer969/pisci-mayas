@@ -2,92 +2,33 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Datos de las imágenes de la galería
-    const galleryImages = [
-        {
-            src: 'images/galeria/lagunas-produccion.jpg',
-            title: 'Lagunas de Producción',
-            description: 'Instalaciones especializadas para el cultivo de Tilapia Roja con sistemas de filtración y oxigenación.',
-            alt: 'Lagunas de producción de Tilapia Roja'
-        },
-        {
-            src: 'images/galeria/proceso-alimentacion.jpg',
-            title: 'Proceso de Alimentación',
-            description: 'Sistema de alimentación balanceada para garantizar el crecimiento óptimo de nuestros peces.',
-            alt: 'Proceso de alimentación de Tilapia Roja'
-        },
-        {
-            src: 'images/galeria/cosecha-tilapia.jpg',
-            title: 'Cosecha de Tilapia Roja',
-            description: 'Proceso especializado de cosecha que garantiza la frescura y calidad del producto.',
-            alt: 'Cosecha de Tilapia Roja'
-        },
-        {
-            src: 'images/galeria/instalaciones.jpg',
-            title: 'Instalaciones Principales',
-            description: 'Infraestructura moderna diseñada para la producción sustentable de Tilapia Roja.',
-            alt: 'Instalaciones de la piscícola'
-        },
-        {
-            src: 'images/galeria/sistema-filtracion.jpg',
-            title: 'Sistema de Filtración',
-            description: 'Tecnología avanzada de filtración y tratamiento de agua para mantener la calidad óptima.',
-            alt: 'Sistema de filtración de agua'
-        },
-        {
-            src: 'images/galeria/equipo-tecnico.jpg',
-            title: 'Equipo Técnico',
-            description: 'Personal especializado en acuicultura y manejo de Tilapia Roja con años de experiencia.',
-            alt: 'Equipo técnico especializado'
-        },
-        // Imágenes adicionales que se pueden agregar fácilmente
-        {
-            src: 'images/galeria/placeholder-1.jpg',
-            title: 'Monitoreo de Calidad',
-            description: 'Control constante de parámetros de agua para garantizar las mejores condiciones.',
-            alt: 'Monitoreo de calidad del agua',
-            placeholder: true
-        },
-        {
-            src: 'images/galeria/placeholder-2.jpg',
-            title: 'Alevines de Tilapia',
-            description: 'Crías de alta calidad genética para el desarrollo de nuevas generaciones.',
-            alt: 'Alevines de Tilapia Roja',
-            placeholder: true
-        },
-        {
-            src: 'images/galeria/placeholder-3.jpg',
-            title: 'Laboratorio de Análisis',
-            description: 'Instalaciones de laboratorio para análisis de calidad y control sanitario.',
-            alt: 'Laboratorio de análisis',
-            placeholder: true
-        },
-        {
-            src: 'images/galeria/placeholder-4.jpg',
-            title: 'Proceso de Empaque',
-            description: 'Empaque especializado que mantiene la frescura del producto hasta el consumidor final.',
-            alt: 'Proceso de empaque',
-            placeholder: true
-        },
-        {
-            src: 'images/galeria/placeholder-5.jpg',
-            title: 'Equipo de Producción',
-            description: 'Nuestro equipo trabajando en las diferentes etapas del proceso productivo.',
-            alt: 'Equipo de producción',
-            placeholder: true
-        },
-        {
-            src: 'images/galeria/placeholder-6.jpg',
-            title: 'Vista Aérea de la Piscícola',
-            description: 'Vista panorámica de nuestras instalaciones y el entorno natural que nos rodea.',
-            alt: 'Vista aérea de la piscícola',
-            placeholder: true
-        }
+    // Lista de imágenes disponibles en la galería (se cargan automáticamente)
+    const availableImages = [
+        'imagen1.jpg',
+        'imagen2.jpg', 
+        'imagen3.jpg',
+        'imagen4.jpg',
+        'imagen5.jpg',
+        'imagen6.jpg',
+        'imagen7.jpg',
+        'imagen8.jpg'
     ];
+
+    // Títulos simples para las imágenes (sin descripciones largas)
+    const imageTitles = {
+        'imagen1.jpg': 'Imagen 1',
+        'imagen2.jpg': 'Imagen 2',
+        'imagen3.jpg': 'Imagen 3',
+        'imagen4.jpg': 'Imagen 4',
+        'imagen5.jpg': 'Imagen 5',
+        'imagen6.jpg': 'Imagen 6',
+        'imagen7.jpg': 'Imagen 7',
+        'imagen8.jpg': 'Imagen 8'
+    };
 
     // Variables globales
     let displayedImages = 6; // Mostrar 6 imágenes inicialmente
-    let allImages = [...galleryImages];
+    let allImages = []; // Se llenará dinámicamente
 
     // Elementos del DOM
     const galleryContainer = document.getElementById('gallery-container');
@@ -98,8 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalDescription = document.getElementById('modal-description');
     const downloadBtn = document.getElementById('download-btn');
 
+    // Cargar imágenes dinámicamente
+    function loadImages() {
+        allImages = availableImages.map(filename => {
+            const imageObj = {
+                src: `images/galeria/${filename}`,
+                title: imageTitles[filename] || filename.replace('.jpg', '').replace('-', ' '),
+                description: '', // Sin descripciones en la galería completa
+                alt: imageTitles[filename] || filename.replace('.jpg', '').replace('-', ' ')
+            };
+            return imageObj;
+        });
+    }
+
     // Inicializar la galería
     function initGallery() {
+        loadImages();
         renderGallery();
         setupEventListeners();
     }
@@ -132,28 +87,13 @@ document.addEventListener('DOMContentLoaded', function() {
         galleryItem.className = 'gallery-item fade-in';
         galleryItem.setAttribute('data-index', index);
         
-        if (image.placeholder) {
-            // Crear placeholder para imágenes que no existen
-            galleryItem.innerHTML = `
-                <div class="gallery-placeholder">
-                    <i class="fas fa-image"></i>
-                    <h6>${image.title}</h6>
-                    <p>Imagen próximamente</p>
-                </div>
-                <div class="gallery-overlay">
-                    <h5>${image.title}</h5>
-                    <p>${image.description}</p>
-                </div>
-            `;
-        } else {
-            galleryItem.innerHTML = `
-                <img src="${image.src}" alt="${image.alt}" loading="lazy">
-                <div class="gallery-overlay">
-                    <h5>${image.title}</h5>
-                    <p>${image.description}</p>
-                </div>
-            `;
-        }
+        // Crear elemento de imagen simple (sin descripciones)
+        galleryItem.innerHTML = `
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\\'gallery-placeholder\\'><i class=\\'fas fa-image\\'></i><h6>${image.title}</h6><p>Imagen no disponible</p></div>'">
+            <div class="gallery-overlay">
+                <h5>${image.title}</h5>
+            </div>
+        `;
         
         // Agregar evento de click
         galleryItem.addEventListener('click', () => openImageModal(image));
@@ -185,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Botón de descarga
         downloadBtn.addEventListener('click', function() {
             const currentImage = getCurrentModalImage();
-            if (currentImage && !currentImage.placeholder) {
+            if (currentImage) {
                 downloadImage(currentImage.src, currentImage.title);
             }
         });
@@ -193,18 +133,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Abrir modal de imagen
     function openImageModal(image) {
-        if (image.placeholder) {
-            // No abrir modal para placeholders
-            return;
-        }
-
         modalImage.src = image.src;
         modalImage.alt = image.alt;
         modalTitle.textContent = image.title;
-        modalDescription.textContent = image.description;
+        modalDescription.textContent = image.description || ''; // Sin descripción en galería
         
-        // Actualizar botón de descarga
-        downloadBtn.style.display = image.placeholder ? 'none' : 'inline-block';
+        // Mostrar botón de descarga
+        downloadBtn.style.display = 'inline-block';
         
         imageModal.show();
     }

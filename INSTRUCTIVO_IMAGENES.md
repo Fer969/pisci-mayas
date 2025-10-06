@@ -41,20 +41,20 @@ images/
 2. Las nuevas imágenes aparecerán automáticamente
 3. También aparecerán en la sección de galería del `index.html`
 
-## 📝 Convenciones de Nombres Sugeridas
+## 📝 Nombres Configurados en el Sistema
 
-| Tipo de Imagen | Nombre Sugerido |
-|----------------|-----------------|
-| Lagunas de producción | `lagunas-produccion.jpg` |
-| Proceso de alimentación | `proceso-alimentacion.jpg` |
-| Cosecha de tilapia | `cosecha-tilapia.jpg` |
-| Instalaciones generales | `instalaciones.jpg` |
-| Equipo técnico | `equipo-tecnico.jpg` |
-| Sistema de filtración | `sistema-filtracion.jpg` |
-| Alevines | `alevines-tilapia.jpg` |
-| Personal trabajando | `personal-trabajo.jpg` |
-| Vista aérea | `vista-aerea-piscicola.jpg` |
-| Tanques de almacenamiento | `tanques-almacenamiento.jpg` |
+| Imagen | Nombre en el Sistema |
+|--------|---------------------|
+| Imagen 1 | `imagen1.jpg` |
+| Imagen 2 | `imagen2.jpg` |
+| Imagen 3 | `imagen3.jpg` |
+| Imagen 4 | `imagen4.jpg` |
+| Imagen 5 | `imagen5.jpg` |
+| Imagen 6 | `imagen6.jpg` |
+| Imagen 7 | `imagen7.jpg` |
+| Imagen 8 | `imagen8.jpg` |
+
+**Nota**: El sistema está configurado para usar estos nombres exactos. Solo copia tus imágenes con estos nombres a la carpeta `images/galeria/`.
 
 ## ⚠️ Importante
 
