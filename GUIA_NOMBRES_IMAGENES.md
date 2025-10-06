@@ -5,41 +5,41 @@
 He modificado el sistema para que funcione exactamente como quieres:
 - ✅ **En el index.html**: Las 3 primeras imágenes mantienen descripciones al hacer hover
 - ✅ **En la galería completa**: Las imágenes se muestran SIN descripciones largas
-- ✅ **Sistema automático**: Usa exactamente los nombres que ya tienes
+- ✅ **Sistema automático**: Solo copias las imágenes con estos nombres y aparecen
 
 ---
 
 ## 📝 **NOMBRES EXACTOS PARA TUS 8 IMÁGENES:**
 
-| Imagen | Nombre a Usar | Descripción |
-|--------|---------------|-------------|
-| Imagen 1 | `imagen1.jpg` | Tu imagen de lagos/lagunas |
-| Imagen 2 | `imagen2.jpg` | Tu imagen del proceso de alimentación |
-| Imagen 3 | `imagen3.jpg` | Tu imagen de pescados/cosecha |
-| Imagen 4 | `imagen4.jpg` | Tu imagen de instalaciones |
-| Imagen 5 | `imagen5.jpg` | Tu imagen del sistema de filtración |
-| Imagen 6 | `imagen6.jpg` | Tu imagen del equipo técnico |
-| Imagen 7 | `imagen7.jpg` | Tu imagen de alevines/crías |
-| Imagen 8 | `imagen8.jpg` | Tu imagen de vista general |
+| Tu Imagen Actual | Nuevo Nombre | Descripción |
+|------------------|--------------|-------------|
+| `imagen1.jpg` | `lagunas-produccion.jpg` | Imagen de los lagos/lagunas |
+| `imagen2.jpg` | `proceso-alimentacion.jpg` | Imagen del proceso de alimentación |
+| `imagen3.jpg` | `cosecha-tilapia.jpg` | Imagen de pescados/cosecha |
+| `imagen4.jpg` | `instalaciones.jpg` | Imagen de instalaciones generales |
+| `imagen5.jpg` | `sistema-filtracion.jpg` | Imagen del sistema de filtración |
+| `imagen6.jpg` | `equipo-tecnico.jpg` | Imagen del equipo técnico |
+| `imagen7.jpg` | `alevines-tilapia.jpg` | Imagen de alevines/crías |
+| `imagen8.jpg` | `vista-general.jpg` | Vista general de la piscícola |
 
 ---
 
 ## 🚀 **PASOS PARA SUBIR TUS IMÁGENES:**
 
-### Paso 1: Mantener los nombres actuales
+### Paso 1: Renombrar tus archivos
 ```
-✅ imagen1.jpg (mantener este nombre)
-✅ imagen2.jpg (mantener este nombre)
-✅ imagen3.jpg (mantener este nombre)
-✅ imagen4.jpg (mantener este nombre)
-✅ imagen5.jpg (mantener este nombre)
-✅ imagen6.jpg (mantener este nombre)
-✅ imagen7.jpg (mantener este nombre)
-✅ imagen8.jpg (mantener este nombre)
+imagen1.jpg → lagunas-produccion.jpg
+imagen2.jpg → proceso-alimentacion.jpg
+imagen3.jpg → cosecha-tilapia.jpg
+imagen4.jpg → instalaciones.jpg
+imagen5.jpg → sistema-filtracion.jpg
+imagen6.jpg → equipo-tecnico.jpg
+imagen7.jpg → alevines-tilapia.jpg
+imagen8.jpg → vista-general.jpg
 ```
 
 ### Paso 2: Copiar a la carpeta
-- Copia todos los archivos con sus nombres actuales a: `images/galeria/`
+- Copia todos los archivos renombrados a: `images/galeria/`
 
 ### Paso 3: ¡Listo!
 - Las imágenes aparecerán automáticamente en tu sitio web

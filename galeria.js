@@ -4,26 +4,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Lista de imágenes disponibles en la galería (se cargan automáticamente)
     const availableImages = [
-        'imagen1.jpg',
-        'imagen2.jpg', 
-        'imagen3.jpg',
-        'imagen4.jpg',
-        'imagen5.jpg',
-        'imagen6.jpg',
-        'imagen7.jpg',
-        'imagen8.jpg'
+        'lagunas-produccion.jpg',
+        'proceso-alimentacion.jpg', 
+        'cosecha-tilapia.jpg',
+        'instalaciones.jpg',
+        'sistema-filtracion.jpg',
+        'equipo-tecnico.jpg',
+        'alevines-tilapia.jpg',
+        'vista-general.jpg'
     ];
 
     // Títulos simples para las imágenes (sin descripciones largas)
     const imageTitles = {
-        'imagen1.jpg': 'Imagen 1',
-        'imagen2.jpg': 'Imagen 2',
-        'imagen3.jpg': 'Imagen 3',
-        'imagen4.jpg': 'Imagen 4',
-        'imagen5.jpg': 'Imagen 5',
-        'imagen6.jpg': 'Imagen 6',
-        'imagen7.jpg': 'Imagen 7',
-        'imagen8.jpg': 'Imagen 8'
+        'lagunas-produccion.jpg': 'Lagunas de Producción',
+        'proceso-alimentacion.jpg': 'Proceso de Alimentación',
+        'cosecha-tilapia.jpg': 'Cosecha de Tilapia Roja',
+        'instalaciones.jpg': 'Instalaciones',
+        'sistema-filtracion.jpg': 'Sistema de Filtración',
+        'equipo-tecnico.jpg': 'Equipo Técnico',
+        'alevines-tilapia.jpg': 'Alevines de Tilapia',
+        'vista-general.jpg': 'Vista General'
     };
 
     // Variables globales
